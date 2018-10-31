@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HitWicket"
+        xmlns:Control="clr-namespace:HitWicket.UserControls"
         mc:Ignorable="d"
         Title="RegistrationWindow" WindowState="Maximized">
     <Grid>
@@ -15,7 +16,7 @@
             <ColumnDefinition Width="1.5*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1.5*"/>
             <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -23,7 +24,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1.5*"/>
         </Grid.RowDefinitions>
 
         <Image Source="hitwicket.png" Height="100" Grid.Row="1" Grid.ColumnSpan="5" HorizontalAlignment="Center" />
@@ -37,7 +38,7 @@
         <Label Grid.Row="4" Grid.Column="2" Content="(OR)" Style="{StaticResource LabelStyle}"/>
 
 
-        <TextBox Grid.Row="3" Grid.Column="3" Style="{StaticResource TextBoxStyle}"/>
+        <Control:UTextBox Watermark="Enter Email" Grid.Row="3" Grid.Column="3" Style="{StaticResource TextBoxWatermarkStyle}" />
         <TextBox Grid.Row="4" Grid.Column="3" Style="{StaticResource TextBoxStyle}"/>
         <Button Content="Login" Grid.Row="5" Grid.Column="3" Style="{StaticResource ButtonStyle}"/>
     </Grid>

@@ -27,7 +27,7 @@
             <RowDefinition Height="1.5*"/>
         </Grid.RowDefinitions>
 
-        <Image Source="hitwicket.png" Height="100" Grid.Row="1" Grid.ColumnSpan="5" HorizontalAlignment="Center" />
+        <Image Source="/hitwicket.png" Height="100" Grid.Row="1" Grid.ColumnSpan="5" HorizontalAlignment="Center" />
         <!--<TextBox Grid.Row="2" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>-->
         <Control:UTextBox Watermark="Enter Name" Grid.Row="2" Grid.Column="1" Style="{StaticResource TextBoxWatermarkStyle}" />
         <!--<TextBox Grid.Row="3" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>-->

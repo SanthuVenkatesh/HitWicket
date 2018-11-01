@@ -20,17 +20,17 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <usercontrols:PlayerCard Firstname="Venkatesh" Lastname="Santhu" Age="24" Grid.Row="0" Grid.Column="0"/>
-            <usercontrols:PlayerCard Firstname="Sandeep" Lastname="Eti" Age="25" Grid.Row="0" Grid.Column="1"/>
-            <usercontrols:PlayerCard Firstname="Mohit" Lastname="Ande" Age="22" Grid.Row="0" Grid.Column="2"/>
-            <usercontrols:PlayerCard Firstname="Ravi" Lastname="Trimurthulu" Age="62" Grid.Row="1" Grid.Column="0"/>
-            <usercontrols:PlayerCard Firstname="Rafiq" Lastname="Mohammad" Age="22" Grid.Row="1" Grid.Column="1"/>
-            <usercontrols:PlayerCard Firstname="Suresh" Lastname="Jeediguntla" Age="42" Grid.Row="1" Grid.Column="2"/>
-            <usercontrols:PlayerCard Firstname="Karun" Lastname="Kumar" Age="33" Grid.Row="2" Grid.Column="0"/>
-            <usercontrols:PlayerCard Firstname="Teja" Lastname="Gorka" Age="29" Grid.Row="2" Grid.Column="1"/>
-            <usercontrols:PlayerCard Firstname="Arun" Lastname="Peddiredla" Age="32" Grid.Row="2" Grid.Column="2"/>
-            <usercontrols:PlayerCard Firstname="Rajesh" Lastname="Patnaik" Age="27" Grid.Row="3" Grid.Column="0"/>
-            <usercontrols:PlayerCard Firstname="Bhaskar" Lastname="Gottapu" Age="31" Grid.Row="3" Grid.Column="1"/>
+            <usercontrols:UPlayer x:Name="player1" Grid.Row="0" Grid.Column="0"/>
+            <usercontrols:UPlayer x:Name="player2" Grid.Row="0" Grid.Column="1"/>
+            <usercontrols:UPlayer x:Name="player3" Grid.Row="0" Grid.Column="2"/>
+            <usercontrols:UPlayer x:Name="player4" Grid.Row="1" Grid.Column="0"/>
+            <usercontrols:UPlayer x:Name="player5" Grid.Row="1" Grid.Column="1"/>
+            <usercontrols:UPlayer x:Name="player6" Grid.Row="1" Grid.Column="2"/>
+            <usercontrols:UPlayer x:Name="player7" Grid.Row="2" Grid.Column="0"/>
+            <usercontrols:UPlayer x:Name="player8" Grid.Row="2" Grid.Column="1"/>
+            <usercontrols:UPlayer x:Name="player9" Grid.Row="2" Grid.Column="2"/>
+            <usercontrols:UPlayer x:Name="player10" Grid.Row="3" Grid.Column="0"/>
+            <usercontrols:UPlayer x:Name="player11" Grid.Row="3" Grid.Column="1"/>
             
         </Grid>
     </ScrollViewer>

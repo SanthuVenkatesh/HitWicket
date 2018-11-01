@@ -1,0 +1,38 @@
+﻿<Window x:Class="HitWicket.SquadWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HitWicket"
+        xmlns:usercontrols="clr-namespace:HitWicket.UserControls"
+        mc:Ignorable="d"
+        Title="SquadWindow" WindowState="Maximized" Padding="15">
+    <ScrollViewer>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <usercontrols:PlayerCard Firstname="Venkatesh" Lastname="Santhu" Age="24" Grid.Row="0" Grid.Column="0"/>
+            <usercontrols:PlayerCard Firstname="Sandeep" Lastname="Eti" Age="25" Grid.Row="0" Grid.Column="1"/>
+            <usercontrols:PlayerCard Firstname="Mohit" Lastname="Ande" Age="22" Grid.Row="0" Grid.Column="2"/>
+            <usercontrols:PlayerCard Firstname="Ravi" Lastname="Trimurthulu" Age="62" Grid.Row="1" Grid.Column="0"/>
+            <usercontrols:PlayerCard Firstname="Rafiq" Lastname="Mohammad" Age="22" Grid.Row="1" Grid.Column="1"/>
+            <usercontrols:PlayerCard Firstname="Suresh" Lastname="Jeediguntla" Age="42" Grid.Row="1" Grid.Column="2"/>
+            <usercontrols:PlayerCard Firstname="Karun" Lastname="Kumar" Age="33" Grid.Row="2" Grid.Column="0"/>
+            <usercontrols:PlayerCard Firstname="Teja" Lastname="Gorka" Age="29" Grid.Row="2" Grid.Column="1"/>
+            <usercontrols:PlayerCard Firstname="Arun" Lastname="Peddiredla" Age="32" Grid.Row="2" Grid.Column="2"/>
+            <usercontrols:PlayerCard Firstname="Rajesh" Lastname="Patnaik" Age="27" Grid.Row="3" Grid.Column="0"/>
+            <usercontrols:PlayerCard Firstname="Bhaskar" Lastname="Gottapu" Age="31" Grid.Row="3" Grid.Column="1"/>
+            
+        </Grid>
+    </ScrollViewer>
+    
+</Window>

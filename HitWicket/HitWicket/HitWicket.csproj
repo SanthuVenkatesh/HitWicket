@@ -58,10 +58,15 @@
     <Compile Include="RegistrationWindow.xaml.cs">
       <DependentUpon>RegistrationWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SquadWindow.xaml.cs">
+      <DependentUpon>SquadWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\PlayerCard.xaml.cs">
+      <DependentUpon>PlayerCard.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UTextBox.xaml.cs">
       <DependentUpon>UTextBox.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\WTextBox.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -75,6 +80,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="RegistrationWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SquadWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\PlayerCard.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -111,6 +124,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="hitwicket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="batsman.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="bowler.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

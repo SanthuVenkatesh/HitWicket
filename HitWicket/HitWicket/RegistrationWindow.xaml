@@ -27,19 +27,23 @@
             <RowDefinition Height="1.5*"/>
         </Grid.RowDefinitions>
 
-        <Image Source="hitwicket.png" Height="100" Grid.Row="1" Grid.ColumnSpan="5" HorizontalAlignment="Center" />
-        <TextBox Grid.Row="2" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>
-        <TextBox Grid.Row="3" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>
-        <TextBox Grid.Row="4" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>
-        <TextBox Grid.Row="5" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>
-        <TextBox Grid.Row="6" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>
-        <Button Content="Register" Grid.Row="7" Grid.Column="1" Style="{StaticResource ButtonStyle}"/>
+        <Image Source="/hitwicket.png" Height="100" Grid.Row="1" Grid.ColumnSpan="5" HorizontalAlignment="Center" />
+        <!--<TextBox Grid.Row="2" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>-->
+        <Control:UTextBox Watermark="Enter Name" Grid.Row="2" Grid.Column="1" Style="{StaticResource TextBoxWatermarkStyle}" />
+        <!--<TextBox Grid.Row="3" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>-->
+        <Control:UTextBox Watermark="Enter Email" Grid.Row="3" Grid.Column="1" Style="{StaticResource TextBoxWatermarkStyle}" />
+        <!--<TextBox Grid.Row="4" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>-->
+        <Control:UTextBox Watermark="Enter Team Name" Grid.Row="4" Grid.Column="1" Style="{StaticResource TextBoxWatermarkStyle}" />
+        <!--<TextBox Grid.Row="5" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>-->
+        <Control:UTextBox Watermark="Enter Password" Grid.Row="5" Grid.Column="1" Style="{StaticResource TextBoxWatermarkStyle}" />
+        <!--<TextBox Grid.Row="6" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>-->
+        <Button Content="Register" Grid.Row="6" Grid.Column="1" Style="{StaticResource ButtonStyle}"/>
 
         <Label Grid.Row="4" Grid.Column="2" Content="(OR)" Style="{StaticResource LabelStyle}"/>
 
 
         <Control:UTextBox Watermark="Enter Email" Grid.Row="3" Grid.Column="3" Style="{StaticResource TextBoxWatermarkStyle}" />
-        <TextBox Grid.Row="4" Grid.Column="3" Style="{StaticResource TextBoxStyle}"/>
+        <Control:UTextBox Watermark="Enter Password" Grid.Row="4" Grid.Column="3" Style="{StaticResource TextBoxWatermarkStyle}" />
         <Button Content="Login" Grid.Row="5" Grid.Column="3" Style="{StaticResource ButtonStyle}"/>
     </Grid>
 </Window>

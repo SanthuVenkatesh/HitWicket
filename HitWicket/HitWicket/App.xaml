@@ -5,7 +5,7 @@
              StartupUri="RegistrationWindow.xaml">
     <Application.Resources>
         <Style x:Key="LabelStyle" TargetType="{x:Type Label}" >
-            <Setter Property="Margin"  Value="0,15,15,15"/>
+            <Setter Property="Margin"  Value="0,5,5,5"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
         </Style>
         <Style x:Key="TextBoxStyle" TargetType="{x:Type TextBox}">
@@ -15,8 +15,16 @@
             <Setter Property="FontSize" Value="16" />
             <Setter Property="TextAlignment" Value="Justify" />
         </Style>
+        <Style x:Key="TextBoxWatermarkStyle" TargetType="{x:Type UserControl}">
+            <Setter Property="Margin" Value="0,10,10,10"/>
+            <Setter Property="MinHeight" Value="25" />
+            <Setter Property="MaxHeight" Value="35" />
+            <Setter Property="FontSize" Value="16" />
+        </Style>
         <Style x:Key="ButtonStyle" TargetType="{x:Type Button}">
             <Setter Property="Margin" Value="0,10,10,10"/>
+            <Setter Property="MinHeight" Value="25" />
+            <Setter Property="MaxHeight" Value="35" />
             <Setter Property="FontSize" Value="14" />
             <Setter Property="Foreground" Value="white" />
             <Setter Property="Background" Value="#1a237e" />

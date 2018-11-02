@@ -48,19 +48,19 @@
         <Label Grid.Row="1" Grid.Column="1" Content="{Binding Path=Player.Style}" Style="{StaticResource labelHeaderStyle}" />
 
         <Label Grid.Row="3" Grid.Column="0" Content="Fielding" Style="{StaticResource labelStyle}" />
-        <Label Grid.Row="3" Grid.Column="1" Content="{Binding Path=Player.Fielding}" Style="{StaticResource labelStyle}" />
-        <ProgressBar Value="{Binding Path=Player.Fielding}" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource progressBarStyle}" />
+        <Label Grid.Row="3" Grid.Column="1" Content="{Binding Path=Player.Fielding.SkillLevel}" Style="{StaticResource labelStyle}" />
+        <ProgressBar Value="{Binding Path=Player.Fielding.SkillValue}" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource progressBarStyle}" />
 
         <Label Grid.Row="5" Grid.Column="0" Content="Wicketkeeping" Style="{StaticResource labelStyle}" />
-        <Label Grid.Row="5" Grid.Column="1" Content="{Binding Path=Player.Wicketkeeping}" Style="{StaticResource labelStyle}" />
-        <ProgressBar Value="{Binding Path=Player.Wicketkeeping}" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource progressBarStyle}" />
+        <Label Grid.Row="5" Grid.Column="1" Content="{Binding Path=Player.Wicketkeeping.SkillLevel}" Style="{StaticResource labelStyle}" />
+        <ProgressBar Value="{Binding Path=Player.Wicketkeeping.SkillValue}" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource progressBarStyle}" />
 
         <Label Grid.Row="7" Grid.Column="0" Content="Batting" Style="{StaticResource labelStyle}" />
-        <Label Grid.Row="7" Grid.Column="1" Content="{Binding Path=Player.Batting}" Style="{StaticResource labelStyle}" />
-        <ProgressBar Value="{Binding Path=Player.Batting}" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource progressBarStyle}" />
+        <Label Grid.Row="7" Grid.Column="1" Content="{Binding Path=Player.Batting.SkillLevel}" Style="{StaticResource labelStyle}" />
+        <ProgressBar Value="{Binding Path=Player.Batting.SkillValue}" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource progressBarStyle}" />
 
         <Label Grid.Row="9" Grid.Column="0" Content="Bowling" Style="{StaticResource labelStyle}" />
-        <Label Grid.Row="9" Grid.Column="1" Content="{Binding Path=Player.Bowling}" Style="{StaticResource labelStyle}" />
-        <ProgressBar Value="{Binding Path=Player.Bowling}" Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource progressBarStyle}" />
+        <Label Grid.Row="9" Grid.Column="1" Content="{Binding Path=Player.Bowling.SkillLevel}" Style="{StaticResource labelStyle}" />
+        <ProgressBar Value="{Binding Path=Player.Bowling.SkillValue}" Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource progressBarStyle}" />
     </Grid>
 </UserControl>

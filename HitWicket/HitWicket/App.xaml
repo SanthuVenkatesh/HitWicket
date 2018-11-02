@@ -39,5 +39,11 @@
             <Setter Property="FontSize" Value="22"/>
             <Setter Property="FontStyle" Value="Italic"/>
         </Style>
+        
+        <!--<Style x:Key="LabelText" TargetType="{x:Type Label}">
+            <Setter Property="FontSize" Value="24"/>
+            --><!--<Setter Property="Background" Value="GreenYellow"/>--><!--
+            <Setter Property="Foreground" Value="White"/>-->
+        <!--</Style>-->
     </Application.Resources>
 </Application>

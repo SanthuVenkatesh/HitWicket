@@ -69,9 +69,11 @@
     <Compile Include="RegistrationWindow.xaml.cs">
       <DependentUpon>RegistrationWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Services\DataService.cs" />
     <Compile Include="SquadWindow.xaml.cs">
       <DependentUpon>SquadWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MenuBar.xaml.cs">
+      <DependentUpon>MenuBar.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\UPlayer.xaml.cs">
       <DependentUpon>UPlayer.xaml</DependentUpon>
@@ -96,6 +98,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SquadWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\MenuBar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -146,6 +152,18 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bell.png" />
+    <Resource Include="cap.png" />
+    <Resource Include="invite.png" />
+    <Resource Include="help.png" />
+    <Resource Include="messages.png" />
+    <Resource Include="players.png" />
+    <Resource Include="save %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

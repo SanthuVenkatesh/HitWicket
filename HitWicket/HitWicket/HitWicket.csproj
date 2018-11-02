@@ -72,6 +72,12 @@
     <Compile Include="SquadWindow.xaml.cs">
       <DependentUpon>SquadWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TeamHomePage.xaml.cs">
+      <DependentUpon>TeamHomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MenuBar.xaml.cs">
+      <DependentUpon>MenuBar.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UPlayer.xaml.cs">
       <DependentUpon>UPlayer.xaml</DependentUpon>
     </Compile>
@@ -97,6 +103,14 @@
     <Page Include="SquadWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TeamHomePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\MenuBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="UserControls\UPlayer.xaml">
       <SubType>Designer</SubType>
@@ -145,6 +159,48 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="united-states.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="stadium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="award.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="dummyLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="invite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="loyalty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="manager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="medal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="messages.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="players.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="save %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

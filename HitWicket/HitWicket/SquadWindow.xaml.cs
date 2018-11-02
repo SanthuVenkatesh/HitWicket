@@ -29,10 +29,10 @@ namespace HitWicket
                 Firstname = "Sandeep",
                 Lastname = "Eti",
                 Age = 25,
-                Fielding = 90,
-                Wicketkeeping = 80,
-                Batting = 95,
-                Bowling = 95,
+                Fielding = new Models.Skill(90),
+                Wicketkeeping = new Models.Skill(80),
+                Batting = new Models.Skill(95),
+                Bowling = new Models.Skill(95),
                 Style = "LHB, LF"
             };
 
@@ -41,10 +41,10 @@ namespace HitWicket
                 Firstname = "Venkatesh",
                 Lastname = "Santhu",
                 Age = 24,
-                Fielding = 10,
-                Wicketkeeping = 20,
-                Batting = 30,
-                Bowling = 90,
+                Fielding = new Models.Skill(10),
+                Wicketkeeping = new Models.Skill(20),
+                Batting = new Models.Skill(30),
+                Bowling = new Models.Skill(90),
                 Style = "RHB, RF"
             };
 
@@ -53,10 +53,10 @@ namespace HitWicket
                 Firstname = "Srinivas",
                 Lastname = "Maddala",
                 Age = 33,
-                Fielding = 40,
-                Wicketkeeping = 80,
-                Batting = 50,
-                Bowling = 10,
+                Fielding = new Models.Skill(40),
+                Wicketkeeping = new Models.Skill(80),
+                Batting = new Models.Skill(50),
+                Bowling = new Models.Skill(10),
                 Style = "RHB, WK"
             };
 
@@ -65,10 +65,10 @@ namespace HitWicket
                 Firstname = "Santhosh",
                 Lastname = "Goleccha",
                 Age = 43,
-                Fielding = 50,
-                Wicketkeeping = 20,
-                Batting = 80,
-                Bowling = 30,
+                Fielding = new Models.Skill(50),
+                Wicketkeeping = new Models.Skill(20),
+                Batting = new Models.Skill(80),
+                Bowling = new Models.Skill(30),
                 Style = "RHB, SLM"
             };
 
@@ -77,10 +77,10 @@ namespace HitWicket
                 Firstname = "Trimurthulu",
                 Lastname = "Raavi",
                 Age = 26,
-                Fielding = 30,
-                Wicketkeeping = 20,
-                Batting = 40,
-                Bowling = 40,
+                Fielding = new Models.Skill(30),
+                Wicketkeeping = new Models.Skill(20),
+                Batting = new Models.Skill(40),
+                Bowling = new Models.Skill(40),
                 Style = "RHB, RM"
             };
 
@@ -89,10 +89,10 @@ namespace HitWicket
                 Firstname = "Mohit",
                 Lastname = "Ande",
                 Age = 22,
-                Fielding = 70,
-                Wicketkeeping = 20,
-                Batting = 70,
-                Bowling = 30,
+                Fielding = new Models.Skill(70),
+                Wicketkeeping = new Models.Skill(20),
+                Batting = new Models.Skill(70),
+                Bowling = new Models.Skill(30),
                 Style = "RHB, RF"
             };
 
@@ -101,10 +101,10 @@ namespace HitWicket
                 Firstname = "Rafiq",
                 Lastname = "Mohammed",
                 Age = 24,
-                Fielding = 10,
-                Wicketkeeping = 20,
-                Batting = 70,
-                Bowling = 40,
+                Fielding = new Models.Skill(10),
+                Wicketkeeping = new Models.Skill(20),
+                Batting = new Models.Skill(70),
+                Bowling = new Models.Skill(40),
                 Style = "LHB, RF"
             };
 
@@ -113,10 +113,10 @@ namespace HitWicket
                 Firstname = "Suresh",
                 Lastname = "Jeediguntla",
                 Age = 42,
-                Fielding = 10,
-                Wicketkeeping = 20,
-                Batting = 10,
-                Bowling = 80,
+                Fielding = new Models.Skill(10),
+                Wicketkeeping = new Models.Skill(20),
+                Batting = new Models.Skill(10),
+                Bowling = new Models.Skill(80),
                 Style = "RHB, SLC"
             };
 
@@ -125,10 +125,10 @@ namespace HitWicket
                 Firstname = "Teja",
                 Lastname = "Gorkha",
                 Age = 29,
-                Fielding = 10,
-                Wicketkeeping = 10,
-                Batting = 20,
-                Bowling = 40,
+                Fielding = new Models.Skill(10),
+                Wicketkeeping = new Models.Skill(10),
+                Batting = new Models.Skill(20),
+                Bowling = new Models.Skill(40),
                 Style = "RHB, SLC"
             };
 
@@ -137,10 +137,10 @@ namespace HitWicket
                 Firstname = "Bhaskar",
                 Lastname = "Gottapu",
                 Age = 31,
-                Fielding = 10,
-                Wicketkeeping = 20,
-                Batting = 50,
-                Bowling = 50,
+                Fielding = new Models.Skill(10),
+                Wicketkeeping = new Models.Skill(20),
+                Batting = new Models.Skill(50),
+                Bowling = new Models.Skill(50),
                 Style = "RHB, LM"
             };
 
@@ -149,10 +149,10 @@ namespace HitWicket
                 Firstname = "Karun",
                 Lastname = "Kumar",
                 Age = 32,
-                Fielding = 10,
-                Wicketkeeping = 80,
-                Batting = 60,
-                Bowling = 10,
+                Fielding = new Models.Skill(10),
+                Wicketkeeping = new Models.Skill(80),
+                Batting = new Models.Skill(60),
+                Bowling = new Models.Skill(10),
                 Style = "RHB, WK"
             };
         }

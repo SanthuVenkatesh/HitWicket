@@ -202,5 +202,17 @@
   <ItemGroup>
     <Resource Include="save %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\alarm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\players.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\team.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

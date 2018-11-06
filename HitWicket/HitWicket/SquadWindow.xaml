@@ -7,33 +7,40 @@
         xmlns:usercontrols="clr-namespace:HitWicket.UserControls"
         mc:Ignorable="d"
         Title="SquadWindow" WindowState="Maximized" Padding="15">
-    <ScrollViewer>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="120"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <usercontrols:UPlayer x:Name="player1" Grid.Row="0" Grid.Column="1"/>
-            <usercontrols:UPlayer x:Name="player2" Grid.Row="0" Grid.Column="2"/>
-            <usercontrols:UPlayer x:Name="player3" Grid.Row="0" Grid.Column="3"/>
-            <usercontrols:UPlayer x:Name="player4" Grid.Row="1" Grid.Column="1"/>
-            <usercontrols:UPlayer x:Name="player5" Grid.Row="1" Grid.Column="2"/>
-            <usercontrols:UPlayer x:Name="player6" Grid.Row="1" Grid.Column="3"/>
-            <usercontrols:UPlayer x:Name="player7" Grid.Row="2" Grid.Column="1"/>
-            <usercontrols:UPlayer x:Name="player8" Grid.Row="2" Grid.Column="2"/>
-            <usercontrols:UPlayer x:Name="player9" Grid.Row="2" Grid.Column="3"/>
-            <usercontrols:UPlayer x:Name="player10" Grid.Row="3" Grid.Column="1"/>
-            <usercontrols:UPlayer x:Name="player11" Grid.Row="3" Grid.Column="2"/>
-            <usercontrols:MenuBar Height="{Binding SystemParameters.PrimaryScreenHeight}" Grid.Column="0" Grid.Row="0" Grid.RowSpan="4"/>
-        </Grid>
-    </ScrollViewer>
-    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <usercontrols:MenuBar Height="{Binding SystemParameters.PrimaryScreenHeight}" Grid.Column="0" Grid.Row="0" Grid.RowSpan="4"/>
+
+        <ScrollViewer Grid.Column="1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <usercontrols:UPlayer x:Name="player1" Grid.Row="0" Grid.Column="0"/>
+                <usercontrols:UPlayer x:Name="player2" Grid.Row="0" Grid.Column="1"/>
+                <usercontrols:UPlayer x:Name="player3" Grid.Row="0" Grid.Column="2"/>
+                <usercontrols:UPlayer x:Name="player4" Grid.Row="1" Grid.Column="0"/>
+                <usercontrols:UPlayer x:Name="player5" Grid.Row="1" Grid.Column="1"/>
+                <usercontrols:UPlayer x:Name="player6" Grid.Row="1" Grid.Column="2"/>
+                <usercontrols:UPlayer x:Name="player7" Grid.Row="2" Grid.Column="0"/>
+                <usercontrols:UPlayer x:Name="player8" Grid.Row="2" Grid.Column="1"/>
+                <usercontrols:UPlayer x:Name="player9" Grid.Row="2" Grid.Column="2"/>
+                <usercontrols:UPlayer x:Name="player10" Grid.Row="3" Grid.Column="0"/>
+                <usercontrols:UPlayer x:Name="player11" Grid.Row="3" Grid.Column="1"/>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+
 </Window>

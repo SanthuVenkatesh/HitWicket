@@ -5,17 +5,25 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:HitWicket.UserControls"
              mc:Ignorable="d">
-    <Grid Background="GreenYellow">
+    
+    <UserControl.Resources>
+        <Style x:Key="btnStyle" TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="#ffffff" />
+            <Setter Property="Padding" Value="10" />
+        </Style>
+    </UserControl.Resources>
+    
+    <Grid Background="#212121">
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <!--<RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>-->
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="100"/>
         </Grid.ColumnDefinitions>
 
         <!--<Image HorizontalAlignment="Center" Grid.Row="0" Grid.Column="0" Source="/bell.png" />
@@ -27,39 +35,39 @@
 
 
 
-        <Button Grid.Row="0">
-            <Image Source="/bell.png" Margin="10 5" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Grid.Row="0" Style="{StaticResource btnStyle}">
+            <Image Source="/Images/alarm.png" Margin="10 5" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <Button.ToolTip>
                 <ToolTip>
                     <TextBlock Text="Alert" FontWeight="ExtraBold"></TextBlock>
                 </ToolTip>
             </Button.ToolTip>
         </Button>
-        <Button Grid.Row="1">
-            <Image Source="/messages.png" Margin="10 5" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Grid.Row="1" Style="{StaticResource btnStyle}">
+            <Image Source="/Images/message.png" Margin="10 5" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <Button.ToolTip>
                 <ToolTip>
                     <TextBlock Text="Messages" FontWeight="ExtraBold"></TextBlock>
                 </ToolTip>
             </Button.ToolTip>
         </Button>
-        <Button Grid.Row="2">
-            <Image Source="/players.png" Margin="10 5" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Grid.Row="2" Style="{StaticResource btnStyle}">
+            <Image Source="/Images/Team.png" Margin="10 5" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <Button.ToolTip>
                 <ToolTip>
                     <TextBlock Text="My Team" FontWeight="ExtraBold"></TextBlock>
                 </ToolTip>
             </Button.ToolTip>
         </Button>
-        <Button Grid.Row="3">
-            <Image Source="/cap.png" Margin="10 5" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Grid.Row="3" Style="{StaticResource btnStyle}">
+            <Image Source="/Images/Players.png" Margin="10 5" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <Button.ToolTip>
                 <ToolTip>
                     <TextBlock Text="Players" FontWeight="ExtraBold"></TextBlock>
                 </ToolTip>
             </Button.ToolTip>
         </Button>
-        <Button Grid.Row="4">
+        <!--<Button Grid.Row="4">
             <Image Source="/Invite.png" Margin="10 5" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <Button.ToolTip>
                 <ToolTip>
@@ -74,7 +82,7 @@
                     <TextBlock Text="Help" FontWeight="ExtraBold"></TextBlock>
                 </ToolTip>
             </Button.ToolTip>
-        </Button>
+        </Button>-->
     </Grid>
 
 </UserControl>
